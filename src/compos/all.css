@@ -1,0 +1,37 @@
+.bigbox{
+    border: 5px solid lightblue;
+    /* border-radius: 3px; */
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    color: #206505;
+    font-size: 20px;
+    background-color: #c5efca
+}
+button{
+    border-radius: 10px;
+    background-color: #dcd96f;
+    border: none;
+    padding:3px 10px;
+    margin-left: 20px;
+}
+.do{
+    padding: 5px 8px;
+    margin-left:  160px;
+    border: none;
+}
+.todo{
+    color:#206505;
+    width: 520px;
+    border:5px solid #c5efca;
+    background-color: #c5efca
+}
+li{
+    margin: 10px
+}
+.but{
+    /* margin-right:20px */
+    /* position: absolute;
+    right:20px */
+    float: right;
+}

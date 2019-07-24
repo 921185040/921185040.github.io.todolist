@@ -2,6 +2,7 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import actions from '../redux/actioncreate.js';
+import "./all.css"
 class DoneList extends React.Component {
     //取得已经完成的todo数量
     getUnfinishedCount() {
@@ -22,7 +23,7 @@ class DoneList extends React.Component {
                     <li key={index}>
                         <input type="checkbox" value={todo.id} checked={todo.isComplete} onChange={this.todoChange} />
                         <span>{todo.title}</span>
-                        <button type="button" data_id={todo.id} onClick={this.deleteTodo}>删除</button>
+                        <button type="button" data_id={todo.id} onClick={this.deleteTodo} className='but'>-</button>
                     </li>);
             }
 
@@ -31,7 +32,7 @@ class DoneList extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className='todo'>
                 
                 <div>您已完成{this.getUnfinishedCount()}件事</div>
                 {this.getdone()}
